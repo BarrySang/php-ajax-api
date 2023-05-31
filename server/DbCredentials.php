@@ -15,7 +15,7 @@ class DbCredentials {
     function __construct() {
 
         // create fileReader object to read .env file
-        $fileReader = new FileReader(".env", array("SERVERNAME", "USERNAME", "PASSWORD", "DBNAME"));
+        $fileReader = new FileReader("../.env", array("SERVERNAME", "USERNAME", "PASSWORD", "DBNAME"));
 
         // run method to get values from .env file
         $data = $fileReader->wordSearch();
