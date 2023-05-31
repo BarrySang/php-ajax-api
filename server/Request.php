@@ -49,11 +49,7 @@ class Request {
 
             // method to return data
             if($this->method == "get") {
-                // var_dump($this->stmt);
                 $this->stmt->execute([1]);
-                // var_dump($this->stmt->fetchAll());
-
-                
 
                 // change result type to be associative array
                 $result = $this->stmt->setFetchMode(PDO::FETCH_ASSOC);

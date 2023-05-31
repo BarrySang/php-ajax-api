@@ -18,7 +18,7 @@ class FileReader {
         // while loop to get every line in the file
         while(!feof($file)) {
 
-            // store the current line in a variable
+            // store the current line in a iable
             $line = fgets($file);
 
             // for each loop to check each presence of each word in every line
